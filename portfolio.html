@@ -27,31 +27,35 @@
 <body>
   <!-- Header section -->
 
-  <header class="header">
-    <div class="container header-container">
-      <a class="logo link" href="./index.html" lang="en">Web<span class="stud">Studio</span>
+  <header class="header" data-header>
+    <div class="header__container container">
+      <a class="header__logo link" href="./index.html" lang="en">Web<span class="stud">Studio</span>
       </a>
       <!-- navigation -->
-      <nav class="nav-list">
-        <ul class="nav list header-container">
-          <li class="nav-item">
-            <a class="link nav-link" href="./index.html">Студия</a>
+
+      <nav class="nav">
+        <ul class="nav__list list">
+          <li class="nav__item">
+            <a class="nav__link link" href="./index.html">Студия</a>
           </li>
-          <li class="nav-item">
-            <a class="link nav-link nav-link-current active-link" href="./portfolio.html">Портфолио</a>
+          <li class="nav__item">
+            <a class="nav__link link nav__link--active link" href="./portfolio.html">Портфолио</a>
           </li>
-          <li class="nav-item">
-            <a class="link nav-link" href="./index.html">Контакты</a>
+
+          <li class="nav__item">
+            <a class="nav__link link" href="./index.html">Контакты</a>
           </li>
         </ul>
       </nav>
-      <a class="header-mail nav-link link" href="mailto:info@devstudio.com"><svg width="16" height="12"
-          class="mail-icon">
+      <a class="header__container header__mail link" href="mailto:info@devstudio.com">
+        <svg width="16" height="12" class="mail-icon">
           <use href="./images/icons.svg#envelope"></use>
         </svg>info@devstudio.com</a>
-      <a class="header-phone nav-link link" href="tel:380961111111"><svg width="10" height="16" class="coll-icon">
+      <a class="header__container header__phone link" href="tel:380961111111"><svg width="10" height="16"
+          class="phone-icon">
           <use href="./images/icons.svg#vector"></use>
-        </svg>38 096 111 11 11</a>
+        </svg>
+        38 096 111 11 11</a>
     </div>
   </header>
   <!--Content portfolio-->
@@ -235,43 +239,43 @@
   </main>
   <!--Footer-->
   <footer class="footer">
-    <div class="container container-footer">
-      <div class="footer-list sosial">
-        <a class="logo footer-logo link" href="./index.html" lang="en">Web<span class="footer-stud">Studio</span></a>
-        <address class="sosial">
-          <p class="text-adress">г. Киев, пр-т Леси Украинки, 26</p>
+    <div class="container footer__container">
+      <div class="footer__list footer__address">
+        <a class="footer__logo logo link" href="./index.html" lang="en">Web<span class="footer-stud">Studio</span></a>
+        <address class="footer__address">
+          <p class="footer__text--adress">г. Киев, пр-т Леси Украинки, 26</p>
 
-          <a class="footer-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <a class="footer-phone link" href="tel:380961111111">38 096 111 11 11</a>
+          <a class="footer__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="footer__phone link" href="tel:380961111111">38 096 111 11 11</a>
         </address>
       </div>
-      <div class="sosial-footer">
-        <h3 class="sosial-text">присоединяйтесь</h3>
-        <ul class="list footer-links">
-          <li class="footer-link">
-            <a class="footer-item link" href="" target="_blank" rel="noopener noreferrer" aria-label="Инстаграм">
-              <svg class="footer-icon" width="20" height="20">
+      <div class="footer__sosial">
+        <h3 class="footer__sosial--text">присоединяйтесь</h3>
+        <ul class="list footer__sosial-link">
+          <li class="footer__link">
+            <a class="footer__item link" href="" target="_blank" rel="noopener noreferrer" aria-label="Инстаграм">
+              <svg class="footer__icon" width="20" height="20">
                 <use href="./images/icons.svg#instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="footer-link">
-            <a class="footer-item link" href="" target="_blank" rel="noopener noreferrer" aria-label="Твитер">
-              <svg class="footer-icon" width="20" height="20">
+          <li class="footer__link">
+            <a class="footer__item link" href="" target="_blank" rel="noopener noreferrer" aria-label="Твитер">
+              <svg class="footer__icon" width="20" height="20">
                 <use href="./images/icons.svg#twitter"></use>
               </svg>
             </a>
           </li>
-          <li class="footer-link">
-            <a class="footer-item link" href="" target="_blank" rel="noopener noreferrer" aria-label="Фейсбук">
-              <svg class="footer-icon" width="20" height="20">
+          <li class="footer__link">
+            <a class="footer__item link" href="" target="_blank" rel="noopener noreferrer" aria-label="Фейсбук">
+              <svg class="footer__icon" width="20" height="20">
                 <use href="./images/icons.svg#facebook"></use>
               </svg>
             </a>
           </li>
-          <li class="footer-link">
-            <a class="footer-item link" href="" target="_blank" rel="noopener noreferrer" aria-label="Линкедин">
-              <svg class="footer-icon" width="20" height="20">
+          <li class="footer__link">
+            <a class="footer__item link" href="" target="_blank" rel="noopener noreferrer" aria-label="Линкедин">
+              <svg class="footer__icon" width="20" height="20">
                 <use href="./images/icons.svg#linkedin"></use>
               </svg>
             </a>
@@ -279,14 +283,14 @@
         </ul>
       </div>
       <form action="#" class="subscription">
-        <h3 class="subscription-text">Подпишитесь на рассылку</h3>
-        <div class="subscription-footer">
-          <label class="subscription-email">
-            <input class="subscription-input subscription-input-text" type="email" name="user-email"
+        <h3 class="subscription__text">Подпишитесь на рассылку</h3>
+        <div class="subscription__footer">
+          <label class="subscription__email">
+            <input class="subscription__input subscription__input-text" type="email" name="user-email"
               placeholder="E-mail" />
           </label>
-          <button class="subscription-btn-forum subscription-btn-text" type="submit">
-            Подписаться<svg class="subscription-icon" width="24" height="24">
+          <button class="subscription__btn-forum subscription__btn-text" type="submit">
+            Подписаться<svg class="subscription__icon" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>
@@ -294,63 +298,7 @@
       </form>
     </div>
   </footer>
-  <!--  Modal window -->
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button class="modal-btn" type="button" data-modal-close>
-        <svg class="modal-btn-icon" width="18" height="18">
-          <use href="./images/icons.svg#close-black"></use>
-        </svg>
-      </button>
-      <!-- Форма -->
-      <form class="form">
-        <strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
-        <label class="form-group">
-          <span class="form-label">Имя</span>
-          <input class="form-input" type="text" name="user-name" />
-          <svg class="form-icon" width="18" height="18">
-            <use href="./images/icons.svg#person-black"></use>
-          </svg>
-        </label>
-        <label class="form-group">
-          <span class="form-label">Телефон</span>
-          <input class="form-input" type="tel" name="user-phone" />
-          <svg class="form-icon" width="18" height="18">
-            <use href="./images/icons.svg#phone-black"></use>
-          </svg>
-        </label>
-
-        <label class="form-group">
-          <span class="form-label">Почта</span>
-          <input class="form-input" type="email" name="user-email" />
-          <svg class="form-icon" width="18" height="18">
-            <use href="./images/icons.svg#email-black"></use>
-          </svg>
-        </label>
-
-        <label class="form-comment">
-          <span class="form-label-comment">Комментарий</span>
-          <textarea class="modal-comment modal-comment-text" name="comment" rows="5"
-            placeholder="Введите текст"></textarea>
-        </label>
-        <label class="register-form-agreement">
-          <input class="register-checkbox visuaaly-hidden" type="checkbox" name="agreement" />
-          <svg class="register-icon" width="16" height="15">
-            <use class="register-icon-uncheck" href="./images/icons.svg#Checkbox"></use>
-            <use class="register-icon-check" href="./images/icons.svg#icon-check"></use>
-          </svg>
-          <span class="register-form-agreement-text">
-            Соглашаюсь с рассылкой и принимаю
-            <a class="register-form-agreement-link" href="">Условия договора</a>
-          </span>
-        </label>
-        <button class="modal-btn-forum modal-btn-text" type="submit">
-          Отправить
-        </button>
-      </form>
-    </div>
-  </div>
-
+  <script src="./js/header-scroll.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 
