@@ -363,16 +363,16 @@ p {
 
 /* .pictures {
   padding-bottom: 94px;
-}
+} */
 
 /*  group-pictures */
 
 /* .pictures__list {
   display: flex;
   gap: 30px;
-}
+} */
 
-.pictures__text {
+/* .pictures__text {
   margin-bottom: 50px;
   font-style: normal;
   font-weight: 700;
@@ -382,11 +382,11 @@ p {
   letter-spacing: 0.03em;
 
   color: var(--main-tex);
-}
-.pictures__img {
+} */
+/* .pictures__img {
   position: relative;
-}
-.pictures__img--text {
+} */
+/* .pictures__img--text {
   position: absolute;
   width: 100%;
   z-index: 50;
@@ -407,8 +407,7 @@ p {
   text-transform: uppercase;
 
   color: var(--light-text);
-}
-*/
+} */
 
 /* Team section
 .team {
